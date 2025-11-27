@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 #Comment
-for f in ./*; do
+for f in sort ./*; do
 	echo "$f" | cut -d'-' -f2-
 done
