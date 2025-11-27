@@ -4,6 +4,8 @@ count=0
 while [ $count -le 10 ]; do
 	if [ $count = 9 ]; then
 		echo "Hi"
+		((count++))
+		continue
 		fi
 	echo "Best School"
 	((count++))
