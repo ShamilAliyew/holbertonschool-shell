@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 #Comment
-for f in sort ./*; do
+list=$(ls *)
+for f in $list; do
 	echo "$f" | cut -d'-' -f2-
 done
