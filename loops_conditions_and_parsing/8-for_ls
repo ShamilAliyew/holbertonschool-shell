@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 #Comment
-list=$(./*)
-for f in $list; do
+for f in *; do
 	echo "$f" | cut -d'-' -f2-
 done
