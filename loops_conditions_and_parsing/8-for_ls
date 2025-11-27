@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #Comment
-list=$(ls *)
+list=$(./*glob)
 for f in $list; do
 	echo "$f" | cut -d'-' -f2-
 done
