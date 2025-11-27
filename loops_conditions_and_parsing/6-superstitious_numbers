@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 #....
-while [ {1..20} ]; do
+count=1
+while [ $count -le 20 ]; do
     case $count in
        4)
 	 echo "bad luck from China"
@@ -12,5 +13,6 @@ while [ {1..20} ]; do
          echo "bad luck from Italy"
           ;;
        esac
-       echo "Best School"
+       echo "$count"
+       ((count++))
 done
