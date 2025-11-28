@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 #Comment
 while read line; do
-	echo "$line" | cut -d':' -f1
-	echo "$line" | cut -d':' -f3
-	echo "$line" | cut -d':' -f6
+	echo "$line" | cut -d':' -f1,3,6
 done < /etc/passwd
