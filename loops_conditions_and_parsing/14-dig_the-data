@@ -1,3 +1,10 @@
 #!/usr/bin/env bash
 # Apache log file search
-awk '{ print NR,$1,$9 }' apache-access.log
+awk '{ count $1,$9 }
+END{
+  for (key in count){
+    split(key ,arr,SUBSEP)
+    print count[key],arr[1],arr[2]
+}
+}'
+apache-access.log
